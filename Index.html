@@ -9,7 +9,6 @@
 		    width: 400px;
 		    background-color: #eaeaea;
 		    border-radius: 0px 8px 9px;
-		    border-color: #B4C9D8;
 		    border-style: solid;
 		    border-width: 1px;
 		    box-shadow: 0px 0px 15px #bdc3c7;
@@ -41,6 +40,15 @@
 	    margin-top: 7px;
 	    margin-left: 5px;
 	}
+	.cheked-message{
+		width: 7px;
+	    height: 7px;
+	    display: block;
+	    float: left;
+	    margin-top: 7px;
+	    margin-left: 5px;
+	    display: none;
+	}
 	.avatar{
 	    width: 57px;
 	    height: 56px;
@@ -66,7 +74,6 @@
 	    float: left;
 	    margin-top: 14px;
 	    background-color: #FFFFFF;
-	    border-color: #B4C9D8;
 	    border-style: solid;
 	    border-width: 1px;
 	    box-shadow: 0px 0px 15px #bdc3c7;
@@ -74,17 +81,44 @@
 	    -ms-transform: translate(14px,3px) rotate(224deg);
 	    -webkit-transform: translate(18px,5px) rotate(224deg);
 	}
+	.border-select{
+	    border-color: rgba(39,174,96,0.65);
+	}
+	.border-unselect{
+		border-color: #B4C9D8;
+	}
+	.style-button-test{
+		    width: 52px;
+		    height: 29px;
+		    background: #eaeaea;
+		    display: inline-block;
+		    float: left;
+		    margin-top: 19px;
+		    margin-left: 30px;
+		    border-radius: 9px;
+		    border-color: #8e8e8e;
+		    border-style: solid;
+		    border-width: 1px;
+		    padding: 4px 2px 0px 11px;
+		    font: 14px monospace;
+		    cursor: pointer;
+	}
     </style>
 </head>
 <body>
 	<img src="images/kevin.jpg" alt="" class="resize avatar">
-	<div class="icon-border-message"></div>
-	<div class="border-message">
+	<div class="icon-border-message border-unselect"></div>
+	<div class="border-message border-unselect">
 	<span class="pointer-message"></span>
 	<span class="content-message">
-	Contenido del mensaje
+	 Contenido del mensaje
 	</span>
 	</div>
 
+	<div class="style-button-test">
+		Efecto
+	</div>
 </body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/effects.js"></script>
 </html>
